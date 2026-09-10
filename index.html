@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assistente IA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <main class="chat-container">
+        <header class="chat-header">
+            <div class="marca">
+                <span class="marca-nome">Assistente</span>
+                <span class="marca-status"><span class="status-ponto"></span>Online</span>
+            </div>
+        </header>
+
+        <section class="chat-mensagens" id="chat-mensagens">
+            <div class="mensagem ia">
+                <span class="remetente">Assistente</span>
+                Olá! Como posso te ajudar hoje?
+            </div>
+        </section>
+
+        <form class="chat-input" id="form-mensagem">
+            <input
+                type="text"
+                id="input-mensagem"
+                placeholder="Escreva sua mensagem..."
+                autocomplete="off"
+            >
+            <button type="submit" id="botao-enviar" aria-label="Enviar mensagem">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 12L21 3L14 21L11 13L3 12Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>
+                </svg>
+            </button>
+        </form>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
